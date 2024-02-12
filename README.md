@@ -14,4 +14,4 @@ Create a Python script that can:
   For each customer, get the sum of each item
   Items with no purchase (total quantity=0) should be omitted from the final list
   No decimal points allowed (The company doesn’t sell half of an item ;) ) Challenge: Provide 2 solutions, one using purely SQL, the other using Pandas
-  store the query to a CSV file, delimiter should be the semicolon character (';')![image](https://github.com/nikhileshrvashisht98/EastVantage_XYZ_marketing_Nikhilesh/assets/106282887/9a5d66c2-751c-493e-8643-1a71e8f537bd)
+  store the query to a CSV file, delimiter should be the semicolon character (';')
