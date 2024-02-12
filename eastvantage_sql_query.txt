@@ -1,0 +1,18 @@
+SELECT
+    c.customer_id,
+    c.age,
+    si.item_name,
+    SUM(si.quantity) AS total_quantity
+FROM
+    customers c
+INNER JOIN
+    sales s ON c.customer_id = s.customer_id
+INNER JOIN
+    sales_items si ON s.sale_id = si.sales_id
+WHERE
+    c.age BETWEEN 18 AND 35
+    AND si.quantity > 0
+GROUP BY
+    c.customer_id, c.age, si.item_name
+ORDER BY
+    c.customer_id, si.item_name;
